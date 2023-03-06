@@ -34,7 +34,6 @@ describe('resource-model', () => {
             const response = await request(server).post('/api').send({member: 'susie'})
             expect(response.status).toBe(201)
         })
-
     })
 
     describe('DELETE /:id', () => {
@@ -56,7 +55,4 @@ describe('resource-model', () => {
             expect(response.body).toEqual({ success: "Successfully removed the member. "})
         })
     })
-    
-
-    
 })
